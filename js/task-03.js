@@ -24,6 +24,8 @@ const creatListItem = function ({ url, alt }) {
   const createItemImg = createList.appendChild(itemImg);
   createItemImg.setAttribute("src", url);
   createItemImg.setAttribute("alt", alt); //<img src=""https://images.pexels.com/photos/140134/pexels-photo-140134.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"">
+  listitem.classList.add("gallery");
+  createItemImg.classList.add("picture");
   return createItemImg;
 };
 
